@@ -1,16 +1,6 @@
 language: node_js
+
+sudo: false
+
 node_js:
-  - "6.3"
-# 项目所在分支
-branches:
-  only:
-  - master
-# .travis.yml 配置
-cache:
-  directories:
-    - node_modules
-install:
-- npm install -g pm2
-- npm install
-script: 
-- npm test
+  - "6"
