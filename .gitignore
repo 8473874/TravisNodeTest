@@ -3,6 +3,7 @@
 #############
 # Packages
 node_modules/
+logs/
 
 #############
 ## Asp.net core
