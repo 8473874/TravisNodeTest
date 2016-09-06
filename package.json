@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "my test koajs project",
   "engines": {
-    "node": ">= 6.2.0"
+    "node": "6.2.0"
   },
   "scripts": {
-    "start": "nodemon bin/www",
+    "start": "node bin/www",
     "test": "export NODE_ENV=test&&pm2 start bin/www --name='MyKoajsTest'",
     "pm2": "export NODE_ENV=production&&pm2 start bin/www --name='MyKoajsTest'"
   },
