@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "my test koajs project",
   "engines": {
-    "node": "5.4.0"
+    "node": "6.2.0"
   },
   "scripts": {
     "start": "node bin/www",
