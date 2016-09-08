@@ -18,7 +18,7 @@ const app = new Koa();
 var index = require('./routes/index');
 
 // middlewares
-app.use(serve('.'));
+app.use(serve('./public'));
 app.use(convert(bodyparser()));
 app.use(convert(json()));
 app.use(convert(logger()));
