@@ -31,7 +31,7 @@ new Pug({
     config: config,
     moment: moment
   },
-  noCache: fasle
+  noCache: false
 });
 
 // 404
