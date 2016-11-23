@@ -9,4 +9,4 @@ WORKDIR /var/webapp
 
 EXPOSE 14330
 
-ENTRYPOINT npm test
+CMD ["npm", "test", "daemon off;"]
