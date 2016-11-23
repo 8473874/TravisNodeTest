@@ -5,7 +5,7 @@ RUN apk add nodejs
 RUN npm install pm2 -g
 
 ADD . /var/webapp
-WORKDIR /var/app
+WORKDIR /var/webapp
 
 EXPOSE 14330
 
