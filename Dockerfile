@@ -9,4 +9,4 @@ WORKDIR /var/webapp
 
 EXPOSE 14330
 
-CMD ["npm", "test", "daemon off;"]
+CMD ["npm", "test"]
