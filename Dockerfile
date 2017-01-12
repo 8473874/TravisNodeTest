@@ -8,7 +8,9 @@ ADD . /var/webapp
 WORKDIR /var/webapp
 
 RUN npm install
+RUN npm test
+RUN pm2 save
 
 EXPOSE 14330
 
-CMD ["npm", "test"]
+CMD ["/bin/bash"]
