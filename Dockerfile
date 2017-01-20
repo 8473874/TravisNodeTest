@@ -9,7 +9,9 @@ WORKDIR /var/webapp
 
 RUN npm install
 RUN /bin/bash
+RUN pm2 start process.json
+RUN pm2 save
 
 EXPOSE 14330
 
-CMD ["pm2-docker", "start", "process.json"]
+CMD ["pm2", "startOrGracefulReload", "process.json", "--no-daemon"]
