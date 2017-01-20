@@ -10,7 +10,8 @@ WORKDIR /var/webapp
 RUN npm install
 RUN npm test
 RUN pm2 save
+RUN /bin/bash
 
 EXPOSE 14330
 
-CMD ["/bin/bash"]
+CMD ["pm2", "list"]
