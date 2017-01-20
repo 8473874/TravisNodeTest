@@ -15,4 +15,4 @@ EXPOSE 14330
 RUN npm test
 RUN pm2 save
 
-CMD ["pm2", "list"]
+CMD ["pm2", "logs"]
