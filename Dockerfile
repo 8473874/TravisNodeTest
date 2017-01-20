@@ -12,4 +12,7 @@ RUN /bin/bash
 
 EXPOSE 14330
 
-CMD ["npm", "test"]
+RUN npm test
+RUN pm2 save
+
+CMD ["pm2", "list"]
