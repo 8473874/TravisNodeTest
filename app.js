@@ -16,6 +16,7 @@ const app = new Koa();
 
 // routes
 var index = require('./routes/index');
+var login = require('./routes/login');
 
 // middlewares
 app.use(serve('.'));
@@ -44,6 +45,7 @@ app.use(async (ctx, next) => {
 
 // router
 router.use('/', index.routes(), index.allowedMethods());
+router.use('/login', login.routes(), login.allowedMethods());
 app.use(router.routes(), router.allowedMethods());
 
 // response
